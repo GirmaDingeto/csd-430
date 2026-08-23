@@ -1,0 +1,50 @@
+/* ============================
+   Global Page Styling
+   ============================ */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    background-color: #003366;
+    color: white;
+    padding: 20px;
+    margin: 0;
+}
+
+p.description {
+    text-align: center;
+    font-size: 16px;
+    margin-top: 15px;
+    color: #333;
+}
+
+/* ============================
+   Table Styling
+   ============================ */
+table {
+    width: 80%;
+    margin: 25px auto;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+th, td {
+    border: 1px solid #333;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #003366;
+    color: white;
+    font-size: 18px;
+}
+
+td {
+    font-size: 16px;
+}
