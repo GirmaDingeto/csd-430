@@ -1,0 +1,34 @@
+------------------------------------------------------------
+Author: Girma
+Date: September 11, 2026
+Assignment: CSD430 – Modules 5.3 & 6.3
+File: permissions_setup.txt
+Encoding: UTF-8
+
+Purpose:
+This document contains the SQL GRANT statements required for Task 2.
+These permissions allow the student1 user to SELECT records from the
+girmaMoviesdata table in the CSD430 database. This ensures that the
+Task 2 JavaBean (Task2MovieBean.java) can access the database properly.
+
+Academic Honesty:
+This file was written by me (Girma).
+AI assistance was used only for formatting and documentation structure.
+
+References:
+- Bellevue University Documentation Requirements PDF
+- Microsoft Copilot assistance for formatting and documentation
+------------------------------------------------------------
+
+-- Select the correct database
+USE CSD430;
+
+-- Grant SELECT permission to student1 user
+GRANT SELECT ON girmaMoviesdata TO 'student1'@'localhost';
+
+-- Apply changes
+FLUSH PRIVILEGES;
+
+------------------------------------------------------------
+End of permissions_setup.txt
+------------------------------------------------------------
