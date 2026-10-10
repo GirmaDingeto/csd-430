@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!-- Simple TLD definition for CustomTags project -->
+
+<taglib xmlns="https://jakarta.ee/xml/ns/jakartaee"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee
+                            https://jakarta.ee/xml/ns/jakartaee/web-jsptaglibrary_3_0.xsd"
+        version="3.0">
+
+    <tlib-version>1.0</tlib-version>
+    <short-name>ex</short-name>
+    <uri>/WEB-INF/example.tld</uri>
+
+    <tag>
+        <name>helloTag</name>
+        <tag-class>com.girma.customtags.HelloTag</tag-class>
+        <body-content>empty</body-content>
+    </tag>
+
+    <tag>
+        <name>askName</name>
+        <tag-class>com.girma.customtags.AskNameTag</tag-class>
+        <body-content>empty</body-content>
+        <attribute>
+            <name>name</name>
+            <required>true</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+    </tag>
+
+    <tag>
+        <name>listMovies</name>
+        <tag-class>com.girma.customtags.listMovies</tag-class>
+        <body-content>empty</body-content>
+    </tag>
+
+</taglib>
